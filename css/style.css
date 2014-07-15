@@ -1,0 +1,48 @@
+@font-face{
+	font-family: "DVHB";
+	src: url('./font/Dolce Vita Heavy Bold.ttf');
+}
+@font-face{
+	font-family: "DVL";
+	src: url('./font/Dolce Vita Light.ttf');
+}
+@font-face{
+	font-family: "DV";
+	src: url('./font/Dolce Vita.ttf');
+}
+
+.corps{
+	width: 850px;
+	height: 400px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 55px;
+	border-radius: 15px 15px 0px 0px;
+	border: double 6px white;
+	background-color: #374A58;
+	display: flex;
+}
+.photo_corps{
+	color: white;
+	/*border: solid 1px green;*/
+	height: 100%;
+	width: 33%;
+	/*background-image:url(./img/myself.jpg);*/
+	/*background-position:center center;*/
+}
+.photo_corps img{
+	width: 65%;
+	margin-top: 45px;
+}
+
+.titre_corps{
+	width: 67%;
+	height: 89%;
+	padding-top: 45px;
+	/*border: solid 1px red;*/
+	text-align: left;
+}
+
+.titre_corps .entete{
+	font-family:DVHB, Arial;
+}
