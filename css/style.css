@@ -1,25 +1,36 @@
+
 @font-face{
-	font-family: "DVHB";
-	src: url('./font/Dolce Vita Heavy Bold.ttf');
+	font-family: 'BlissfulThinking';
+	src: url('../font/BlissfulThinking.otf');
 }
 @font-face{
-	font-family: "DVL";
-	src: url('./font/Dolce Vita Light.ttf');
+	font-family: 'Origin-Bold';
+	src: url('../font/Origin-Bold.ttf');
 }
 @font-face{
-	font-family: "DV";
-	src: url('./font/Dolce Vita.ttf');
+	font-family: 'Origin-ExtraBold';
+	src: url('../font/Origin-ExtraBold.ttf');
+}
+@font-face{
+	font-family: 'Origin-Light';
+	src: url('../font/Origin-Light.ttf');
+}
+@font-face{
+	font-family: 'Origin-Regular';
+	src: url('../font/Origin-Regular.ttf');
 }
 
+/* CORPS */
 .corps{
 	width: 850px;
-	height: 400px;
+	height: 310px;
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 55px;
-	border-radius: 15px 15px 0px 0px;
-	border: double 6px white;
 	background-color: #374A58;
+	display: block;
+}
+.presentation{
 	display: flex;
 }
 .photo_corps{
@@ -27,12 +38,12 @@
 	/*border: solid 1px green;*/
 	height: 100%;
 	width: 33%;
-	/*background-image:url(./img/myself.jpg);*/
-	/*background-position:center center;*/
 }
 .photo_corps img{
 	width: 65%;
 	margin-top: 45px;
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+            -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
 }
 
 .titre_corps{
@@ -44,5 +55,74 @@
 }
 
 .titre_corps .entete{
-	font-family:DVHB, Arial;
+	letter-spacing: 0.05em;
+	width: 67%;
+	font-family:BlissfulThinking, Arial;
+	font-size: 45px;
+	color: white;
+	margin-top: -10px;
+}
+
+.titre_corps .bio{
+	letter-spacing: 0.05em;
+	font-family:Origin-Light, Arial;
+	font-size: 20px;
+	margin-right: 45px;
+	color: white;
+}
+
+.arrow{
+	margin-top: 45px;
+	width: 100%;
+}
+
+/*ICONE FLAT*/
+
+.flaticon-arrow128{
+    color:#ccc;
+    text-shadow:0 -1px 0 black;              
+}
+.flaticon-arrow128:hover,.flaticon-arrow128:focus{
+    /*background:rgba(0,0,0,.4);
+    box-shadow:0 1px 0 rgba(255,255,255,.4);*/
+}
+
+.flaticon-arrow128 span{
+    position:absolute;
+    margin-top: -56px;
+	margin-left: -126px;
+    color:#FFFEFC;
+    background: rgba(166, 153, 145, 0.41);
+    padding:15px;
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-12deg);
+    -ms-transform:scale(0) rotate(-12deg);
+    -webkit-transform:scale(0) rotate(-12deg);
+    transition:all .25s;
+    opacity:0;
+    font-family:BlissfulThinking, Arial;
+    font-size: 20px;
+    font-style: inherit!important;
+}
+
+.flaticon-arrow128:hover span, .flaticon-arrow128:focus span{
+    transform:scale(1) rotate(0);
+    -ms-transform:scale(1) rotate(0);
+    -webkit-transform:scale(1) rotate(0);
+    opacity:1;        
+}
+
+/*CONTENEUR*/
+
+.conteneur{
+	width: 850px;
+	height: 500px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #FFFEFC;
+	display: block;
+
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+            -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
 }
