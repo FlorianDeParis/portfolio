@@ -65,7 +65,7 @@
 
 .titre_corps .bio{
 	letter-spacing: 0.05em;
-	font-family:Origin-ExtraBold, Arial;
+	font-family:Origin-Regular, Arial;
 	font-size: 20px;
 	margin-right: 45px;
 	color: white;
@@ -142,6 +142,7 @@
 	padding-right: 35px;
 }
 .titre_cursus{
+	color: #374A58;
 	font-family:Origin-ExtraBold, Arial;
 	text-decoration: underline;
 	font-size: 25px;

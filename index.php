@@ -37,7 +37,7 @@
 					<li>
 						<span class="annee rotate">2013-2014</span>
 						<div class="etude">
-							<font class="brevet">L3 / Bachelor développement web</font><br>
+							<font class="brevet">L3 / Bachelor - Développement web</font><br>
 							<font class="etablissement">ESGI - Ecole Supérieure de Génie Informatique</font><br>
 							<font class="lieu">Paris 12 - Paris</font>
 						</div>
