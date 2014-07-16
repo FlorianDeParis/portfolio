@@ -65,7 +65,7 @@
 
 .titre_corps .bio{
 	letter-spacing: 0.05em;
-	font-family:Origin-Light, Arial;
+	font-family:Origin-ExtraBold, Arial;
 	font-size: 20px;
 	margin-right: 45px;
 	color: white;
@@ -79,31 +79,38 @@
 /*ICONE FLAT*/
 
 .flaticon-arrow128{
+	position: relative;
     color:#ccc;
-    text-shadow:0 -1px 0 black;              
+    text-shadow: -2px 1px 1px rgb(44, 44, 44);
+    margin-left: 0px !important;              
 }
+.flaticon-arrow128::before{
+	margin-left: 0px !important;
+}
+
 .flaticon-arrow128:hover,.flaticon-arrow128:focus{
     /*background:rgba(0,0,0,.4);
     box-shadow:0 1px 0 rgba(255,255,255,.4);*/
 }
 
 .flaticon-arrow128 span{
-    position:absolute;
-    margin-top: -56px;
-	margin-left: -126px;
-    color:#FFFEFC;
-    background: rgba(166, 153, 145, 0.41);
-    padding:15px;
-    border-radius:3px;
-    box-shadow:0 0 2px rgba(0,0,0,.5);
-    transform:scale(0) rotate(-12deg);
-    -ms-transform:scale(0) rotate(-12deg);
-    -webkit-transform:scale(0) rotate(-12deg);
-    transition:all .25s;
-    opacity:0;
-    font-family:BlissfulThinking, Arial;
-    font-size: 20px;
-    font-style: inherit!important;
+    position: absolute;
+	margin-top: -45px;
+	margin-left: -98px;
+	color: #FFFEFC;
+	background: rgba(166, 153, 145, 0.41);
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0 0 2px rgba(0,0,0,.5);
+	transform: scale(0) rotate(-12deg);
+	-ms-transform: scale(0) rotate(-12deg);
+	-webkit-transform: scale(0) rotate(-12deg);
+	transition: all .25s;
+	opacity: 0;
+	font-family: BlissfulThinking, Arial;
+	font-size: 14px;
+	font-style: inherit!important;
+	width: 135px;
 }
 
 .flaticon-arrow128:hover span, .flaticon-arrow128:focus span{
@@ -118,11 +125,74 @@
 .conteneur{
 	width: 850px;
 	height: 500px;
-	text-align: center;
 	margin: 0 auto;
-	background-color: #FFFEFC;
-	display: block;
-
-	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
-            -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
+	background-color: #F2F6FA;
+	display: flex;
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+.parcours{
+	width: 70%;
+	border: solid 1px green;
+	padding-top: 15px;
+}
+.cursus{
+	color: #374A58;
+	list-style-type: none;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.titre_cursus{
+	font-family:Origin-ExtraBold, Arial;
+	text-decoration: underline;
+	font-size: 25px;
+	text-align: left;
+	margin-left: 35px;
+}
+.cursus li{
+	display: flex;
+	margin-top: 3px;
+	padding: 0px 0px 9px 0px;
+}
+.annee{
+	font-family:Origin-ExtraBold, Arial;
+	text-align: center;
+	font-size: 10px;
+	width: 10%;
+}
+.rotate{
+	margin: auto;
+	-webkit-transform: rotate(-90deg);
+	   -moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+}
+.etude{
+	width: 410px;
+	padding-left: 7px;
+	padding-right: 4px;
+	margin: auto;
+	border-left: solid 1px #374A58;
+}
+.brevet{
+	font-family:Origin-ExtraBold, Arial;
+	font-weight: bold;
+	font-size: 13px;
+}
+.etablissement{
+	font-family:Origin-ExtraBold, Arial;
+	font-size: 10px;
+}
+.lieu{
+	font-family:Origin-ExtraBold, Arial;
+	font-size: 9px;
+}
+.logo_etablissement{
+	width: 90px;
+}
+.logo_etablissement img{
+	width: 100%;
+}
+.competences{
+	width: 30%;
+	border: solid 1px red;
 }
