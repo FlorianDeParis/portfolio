@@ -27,7 +27,7 @@
 				</div>
 				<div class="titre_corps">
 					<div class="entete">Florian Tournay</div>
-					<div class="bio">Développeur Web / Graphiste Amateur<br>
+					<div class="bio">Développeur / Intégrateur Web<br>
 						Etudiant en alternance, passionné de design, des technologies du web ainsi que du high-tech.</div>
 				</div>
 			</div>
@@ -55,10 +55,10 @@
 		<div class="conteneur">
 
 			<!--COLONNE GAUCHE -->
-			<div class="parcours">
+			<section class="parcours">
 
 				<!--CURSUS SCOLAIRE-->
-				<div class="parcours_scolaire">
+				<section class="parcours_scolaire">
 					<div class="titre_cursus">&nbsp;&nbsp;Cursus Scolaire</div>
 					<ul class="liste_des_cursus">
 						<li>
@@ -106,12 +106,10 @@
 							</div>
 						</li>
 					</ul>
-				</div>
-
-
+				</section>
 
 				<!--EXPERIENCE PROFESIONNELLE-->
-				<div class="parcours_professionnel">
+				<section class="parcours_professionnel">
 					<div class="titre_cursus" style="margin-bottom: 15px">&nbsp;&nbsp;Expérience professionnelle</div>
 					<ul class="liste_des_cursus">
 						<li>
@@ -159,11 +157,11 @@
 							</div>
 						</li>
 					</ul>
-				</div>
+				</section>
 
 
 				<!--PASSIONS / INTERETS -->	
-				<div class="liste_interets">
+				<section class="liste_interets">
 					<div class="titre_cursus" style="margin-bottom: 15px">&nbsp;&nbsp;Passions / intérêts</div>
 					<ul class="interets">
 						<li>
@@ -191,13 +189,13 @@
 							</div>
 						</li>
 					</ul>
-				</div>
+				</section>
 
 
-			</div>
+			</section>
 
 			<!--COMPETENCES TECHNIQUES-->
-			<div class="competences">
+			<aside class="competences">
 				<div class="titre_competences">&nbsp;&nbsp;Compétences</div>
 				<ul class="competences_liste">
 					<li>
@@ -377,7 +375,7 @@
 						</ul>
 					</li>
 				</ul>
-			</div>
+			</aside>
 		</div>
 
 		<!--CONTENEUR DE PROJETS-->
