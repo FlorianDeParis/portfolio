@@ -380,15 +380,19 @@
 
 		<!--CONTENEUR DE PROJETS-->
 		<div class="conteneur2">
-			<div class="projet_sites">
-				<div class="titre_projet_sites">&nbsp;&nbsp;Sites internet</div>
-				<div class="contenu_projet_sites">
-					<fieldset>
-						<legend style="font-family: Exo-Light, Arial">Antica.fr</legend>
-						<a href="http://www.antica.fr"><img src="./img/antica.png"></a>
-						<span style="font-family: Exo-Light, Arial">Debogage et design du site</span>
-					</fieldset>
-				</div>
+			<div class="projet">
+				<div class="titre_projet">&nbsp;&nbsp;Projets</div>
+				<!-- palette #394264 / #2E3654 -->
+				<ul class="ligne">
+					<li class="ligne_proj">
+						<div class="contenu_proj">Développement d'une application de télésurveillance et enregistrement de caméras IP</div>
+						<div class="img_proj">IMG</div>
+					</li>
+					<li class="ligne_proj">
+						<div class="contenu_proj">CONTENU</div>
+						<div class="img_proj">IMG</div>
+					</li>
+				</ul>
 			</div>
 			<div class="projet_design">
 				<div class="titre_projet_reas">&nbsp;&nbsp;Réalisations graphiques</div>
@@ -402,12 +406,14 @@
 			</div>
 		</div>
 
+		<!--CONTENEUR DU CONTACT-->
 		<div class="conteneur3">
-			<div>&nbsp;&nbsp;Me contacter</div>
-			<div>
-				Lorem Ipsum
+			<div class="contact">
+				<div class="titre_contact">&nbsp;&nbsp;Me contacter</div>
+				<div class="contenu_contact">
+						LOREM IPSUM
+				</div>
 			</div>
 		</div>
-
 	</body>
 </html>

@@ -113,25 +113,33 @@ html{background: #1f253d;}
 							.legende_points{font-weight: bold;}
 
 /* CONTENEUR PROJETS ET REALISATIONS */
-.conteneur2{color: white; width: 850px; /*height: 500px;*/ margin: 0 auto; margin-top: 15px; display: block; border-radius: 7px 7px 7px 7px; /*background-color: #394264;*/ /*border: solid 1px white;*/}
+.conteneur2{color: white; width: 850px; /*height: 500px;*/ margin: 0 auto; margin-top: 15px; display: block; border-radius: 7px 7px 7px 7px; /*background-color: #394264;*/ /*border: solid 1px white;*/ font-family:Exo-Light, Arial; }
 	
 	/* Projets */
-	.projet_sites{/*border: solid 1px green;*/}
-		.titre_projet_sites{ /* color: #374A58; */ font-family:Exo-Light, Arial; font-size: 18px; text-align: left; /* margin-left: 18px; */ margin-right: 18px; width: 100%; /* height: 100%; */ background-color: #50597b; line-height: 40px; border-radius: 7px 7px 0 0;}
-		.contenu_projet_sites{background-color: #394264; padding-left: 25px; padding-top: 25px;	padding-bottom: 25px;}
-			.contenu_projet_sites fieldset{	padding: 0px; width: 107px; padding-left: 6px; padding-right: 5px; border-radius: 7px;}
-				.contenu_projet_sites fieldset img{height: 58px;}
+	.projet{/*border: solid 1px green;*/}
+		.titre_projet{ /* color: #374A58; */ font-family:Exo-Light, Arial; font-size: 18px; text-align: left; /* margin-left: 18px; */ margin-right: 18px; width: 100%; /* height: 100%; */ background-color: #50597b; line-height: 40px; border-radius: 7px 7px 0 0;}
+		/*.ligne:nth-child(odd){background-color: #394264;}
+		.ligne:nth-child(even){background-color: #2E3654;}*/
+		.ligne{list-style-type:none; background-color: #394264; padding: 0px; margin: 0px;}
+			.ligne_proj{display: flex; height: 100px;}
+			.ligne_proj:nth-child(odd){background-color: #394264}
+			.ligne_proj:nth-child(even){background-color: #2E3654}
+				.ligne_proj .contenu_proj{width: 80%; margin-left: 30px;}
+				.ligne_proj:nth-child(odd) > .img_proj{width: 20%; background-color: #2E3654}
+				.ligne_proj:nth-child(even) > .img_proj{width: 20%; background-color: #262D47}
 
 	/* Realisations */
-	.projet_design{/*border: solid 1px red;*/ height: 300px; margin-top: 15px;}
+	.projet_design{/*border: solid 1px red;*/ margin-top: 15px;}
 		.titre_projet_reas{	/* color: #374A58; */ font-family:Exo-Light, Arial; font-size: 18px; text-align: left; /* margin-left: 18px; */ margin-right: 18px; width: 100%; /* height: 100%; */ background-color: #50597b; line-height: 40px; border-radius: 7px 7px 0 0;}
 		.contenu_projet_reas{background-color: #394264;	padding-left: 25px;	padding-top: 25px; padding-bottom: 25px;}
 			.contenu_projet_reas fieldset{padding: 0px; width: 107px; padding-left: 6px; padding-right: 5px; border-radius: 7px;}	
 				.contenu_projet_reas fieldset img{height: 58px;}
 
-
-
 /* CONTENEUR ME CONTACTER */
-.conteneur3{
+.conteneur3{color: white; width: 850px; /*height: 500px;*/ margin: 0 auto; margin-top: 15px; display: block; border-radius: 7px 7px 7px 7px; /*background-color: #394264;*/ /*border: solid 1px white;*/}
+	.contact{/*border: solid 1px red;*/ height: 300px; margin-top: 15px;}
+		.titre_contact{	/* color: #374A58; */ font-family:Exo-Light, Arial; font-size: 18px; text-align: left; /* margin-left: 18px; */ margin-right: 18px; width: 100%; /* height: 100%; */ background-color: #50597b; line-height: 40px; border-radius: 7px 7px 0 0;}
+		.contenu_contact{background-color: #394264;	padding-left: 25px;	padding-top: 25px; padding-bottom: 25px;}
+			.contenu_contact fieldset{padding: 0px; width: 107px; padding-left: 6px; padding-right: 5px; border-radius: 7px;}	
+				.contenu_contact fieldset img{height: 58px;}
 
-}

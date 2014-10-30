@@ -20,6 +20,8 @@ jQuery().ready(function(){
   	{
   		jQuery('.menu').slideToggle(1000); // Animation toggle du menu
     	jQuery('.conteneur').slideToggle(2000); // Animation toggle du contenu
+      jQuery('.conteneur2').slideToggle(2000); // Animation toggle du contenu
+      jQuery('.conteneur3').slideToggle(2000); // Animation toggle du contenu
     	boolean_open = false;
     	return false;
    	});
