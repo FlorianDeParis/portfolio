@@ -124,9 +124,12 @@ html{background: #1f253d;}
 			.ligne_proj{display: flex; height: 100px;}
 			.ligne_proj:nth-child(odd){background-color: #394264}
 			.ligne_proj:nth-child(even){background-color: #2E3654}
-				.ligne_proj .contenu_proj{width: 80%; margin-left: 30px;}
-				.ligne_proj:nth-child(odd) > .img_proj{width: 20%; background-color: #2E3654}
-				.ligne_proj:nth-child(even) > .img_proj{width: 20%; background-color: #262D47}
+				.ligne_proj .annee_proj{width: 10%; margin-left: 30px; margin: auto; text-align: center;}
+				.ligne_proj .contenu_proj{width: 70%; margin-left: 30px; margin: auto;}
+					.contenu_proj .env_tech{font-weight: bold; text-decoration: underline;}
+				.ligne_proj .img_proj{width: 20%; margin: auto; text-align: center;}
+				/*.ligne_proj:nth-child(odd) > .img_proj{background-color: #2E3654;}
+				.ligne_proj:nth-child(even) > .img_proj{background-color: #262D47;}*/
 
 	/* Realisations */
 	.projet_design{/*border: solid 1px red;*/ margin-top: 15px;}

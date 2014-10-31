@@ -385,23 +385,35 @@
 				<!-- palette #394264 / #2E3654 -->
 				<ul class="ligne">
 					<li class="ligne_proj">
-						<div class="contenu_proj">Développement d'une application de télésurveillance et enregistrement de caméras IP</div>
-						<div class="img_proj">IMG</div>
+						<div class="annee_proj">2014</div>
+						<div class="contenu_proj">Conception d'un thème sous Wordpress pour un site immobilier (en&nbsp;développement&nbsp;...)
+							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> HTML / CSS3 / PHP</div>
+						<div class="img_proj"><img src="./img/wordpress_logo.png"></div>
 					</li>
 					<li class="ligne_proj">
-						<div class="contenu_proj">CONTENU</div>
-						<div class="img_proj">IMG</div>
+						<div class="annee_proj">2014</br>-</br>2013</div>
+						<div class="contenu_proj">Conception et design du site Antica.fr (Actualités des Nouvelles Technologies de l'Information et des Communications de l'Avenir) 
+							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> HTML5 / CSS3 / JS / JQuery / JQuery UI</div>
+						<div class="img_proj"><img src="./img/antica_min.png"></div>
+					</li>
+					<li class="ligne_proj">
+						<div class="annee_proj">2013</div>
+						<div class="contenu_proj">Conception d'un slideshow pour Wordpress 
+							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> HTML / CSS3 / JS / JQuery / PHP</div>
+						<div class="img_proj"><img src="./img/wordpress_logo.png"></div>
+					</li>
+					<li class="ligne_proj">
+						<div class="annee_proj">2012</div>
+						<div class="contenu_proj">Développement de la partie client d'une application de télésurveillance et d'enregistrement vidéo de caméras IP Axis 213PTZ 
+							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> C++ <i>via Qt Creator</i></div>
+						<div class="img_proj"><img src="./img/axis_logo.png"></div>
 					</li>
 				</ul>
 			</div>
 			<div class="projet_design">
 				<div class="titre_projet_reas">&nbsp;&nbsp;Réalisations graphiques</div>
 				<div class="contenu_projet_reas">
-					<fieldset>
-						<legend style="font-family: Exo-Light, Arial">Exemple</legend>
-						<img src="./img/antica.png">
-						<span style="font-family: Exo-Light, Arial">Lorem Ipsum</span>
-					</fieldset>
+					LOREM IPSUM REALISATIONS
 				</div>
 			</div>
 		</div>
