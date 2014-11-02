@@ -4,8 +4,10 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<link rel="stylesheet" type="text/css" href="./css/flaticon.css">
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
 		<link rel="stylesheet" type="text/css" href="jqueryui/development-bundle/themes/smoothness/jquery.ui.all.css"/> 
 		<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/lightbox.min.js"></script>
 		<!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>-->
 		<script type="text/javascript" src="./js/app.js"></script>
 		<!--[if IE]>
@@ -413,7 +415,24 @@
 			<div class="projet_design">
 				<div class="titre_projet_reas">&nbsp;&nbsp;Réalisations graphiques</div>
 				<div class="contenu_projet_reas">
-					LOREM IPSUM REALISATIONS
+					<a href="img/reas/androsignature.png" data-lightbox="image-1" data-title="Signature android pour le site d'Androidgen"><img src="./img/reas/androsignature_thumbnail.png"></a>
+					<a href="img/reas/Asus-Wallapaper.png" data-lightbox="image-1" data-title="Réalisation d'un fond d'écran personnel Asus"><img src="./img/reas/Asus-Wallapaper_thumbnail.png"></a>
+					<a href="img/reas/Avatar.png" data-lightbox="image-1" data-title="Avatar réalisé pour un forumeur"><img src="./img/reas/Avatar_thumbnail.png"></a>
+					<a href="img/reas/Banderole.png" data-lightbox="image-1" data-title="Bannière de ma page personnelle de mix"><img src="./img/reas/Banderole_thumbnail.png"></a>
+					<a href="img/reas/bootlegcover.png" data-lightbox="image-1" data-title="Jaquette d'un bootleg personnellement réalisé"><img src="./img/reas/bootlegcover_thumbnail.png"></a>
+					<a href="img/reas/Bootlogo.png" data-lightbox="image-1" data-title="Bootlogo d'iPhone personnalisé pour un client"><img src="./img/reas/Bootlogo_thumbnail.png"></a>
+					<a href="img/reas/ChannelTemplate.jpg" data-lightbox="image-1" data-title="Ancien template pour ma chaine personnelle Youtube"><img src="./img/reas/ChannelTemplate_thumbnail.png"></a>
+					<a href="img/reas/contestlogo.png" data-lightbox="image-1" data-title="Avatar proposé pour un concours du meilleur avatar"><img src="./img/reas/contestlogo_thumbnail.png"></a>
+					<a href="img/reas/djarchimed-banner.jpg" data-lightbox="image-1" data-title="Deuxième bannière pour mon site de mix"><img src="./img/reas/djarchimed-banner_thumbnail.png"></a>
+					<a href="img/reas/djarchimedwall.png" data-lightbox="image-1" data-title="Fond de mon site de mix"><img src="./img/reas/djarchimedwall_thumbnail.png"></a>
+					<a href="img/reas/ET.png" data-lightbox="image-1" data-title="Logo proposé pour un site prototype de High-Tech"><img src="./img/reas/ET_thumbnail.png"></a>
+					<a href="img/reas/Hennessy.png" data-lightbox="image-1" data-title="Bannière pour une connaissance personnelle"><img src="./img/reas/Hennessy_thumbnail.png"></a>
+					<a href="img/reas/JB416.png" data-lightbox="image-1" data-title="Autre bannière pour un site prototype High-Tech"><img src="./img/reas/JB416_thumbnail.png"></a>
+					<a href="img/reas/persowall.png" data-lightbox="image-1" data-title="Fond d'écran personnel de mon compte Twitter"><img src="./img/reas/persowall_thumbnail.png"></a>
+					<a href="img/reas/Savoirutile-wall.png" data-lightbox="image-1" data-title="Fond d'écran pour un utilisateur Twitter"><img src="./img/reas/Savoirutile-wall_thumbnail.png"></a>
+					<a href="img/reas/stargate_atlantis.png" data-lightbox="image-1" data-title="Bannière personnelle pour un ancien forum"><img src="./img/reas/stargate_atlantis_thumbnail.png"></a>
+					<a href="img/reas/TF2signature.png" data-lightbox="image-1" data-title="Signature personnelle pour un forum de Team Fortress 2"><img src="./img/reas/TF2signature_thumbnail.png"></a>
+					<a href="img/reas/UKDesign.png" data-lightbox="image-1" data-title="Réalisation personnelle"><img src="./img/reas/UKDesign_thumbnail.png"></a>
 				</div>
 			</div>
 		</div>
