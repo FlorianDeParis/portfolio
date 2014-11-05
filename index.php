@@ -397,7 +397,7 @@
 						<div class="annee_proj">2014</br>-</br>2013</div>
 						<div class="contenu_proj">Conception et design du site Antica.fr (Actualités des Nouvelles Technologies de l'Information et des Communications de l'Avenir) 
 							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> HTML5 / CSS3 / JS / JQuery / JQuery UI</div>
-						<div class="img_proj"><img src="./img/antica_min.png"></div>
+						<div class="img_proj"><a onclick="window.open('http://www.antica.fr');"><img src="./img/antica_min.png"></a></div>
 					</li>
 					<li class="ligne_proj">
 						<div class="annee_proj">2013</div>
