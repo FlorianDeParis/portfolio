@@ -19,9 +19,7 @@ jQuery().ready(function(){
    	jQuery('.flaticon-arrow128').click(function()
   	{
   		jQuery('.menu').slideToggle(1000); // Animation toggle du menu
-    	jQuery('.conteneur').slideToggle(2000); // Animation toggle du contenu
-      jQuery('.conteneur2').slideToggle(2000); // Animation toggle du contenu
-      jQuery('.conteneur3').slideToggle(2000); // Animation toggle du contenu
+    	jQuery('.conteneur').slideToggle(2000); // Animation toggle du contenu*/
     	boolean_open = false;
     	return false;
    	});
@@ -29,49 +27,30 @@ jQuery().ready(function(){
    	$('.menu_cv').click(function()
   	{
   		if(boolean_open == false){ // Si le menu est déroulé
-	  		$(".conteneur").effect("drop", {mode:"show"}, 1000);  // Animation de déroulement de conteneur
-        $(".conteneur2").effect("drop", {mode:"hide"}, 1000); // Animation d'enroulement de conteneur
-        /*$(".conteneur").show("drop", {direction:"up"}, 1000);
-	  		$(".conteneur2").hide("drop", {direction:"up"}, 1000);*/
+        $( ".conteneur").slideToggle(1000);
+
+        $( ".conteneur2").hide(500);
+        $( ".conteneur3").hide(500);
   		}
    	});
 
    	$('.menu_projet').click(function()
   	{
   		if(boolean_open == false){ // Si le menu est déroulé
-	  		$(".conteneur2").effect("drop", {mode:"show"}, 1000); // Animation de déroulement de conteneur2
-	  		$(".conteneur").effect("drop", {mode:"hide"}, 1000);  // Animation d'enroulement de conteneur
-        /*$(".conteneur").hide("drop", {direction:"up"}, 1000);
-        $(".conteneur2").show("drop", {direction:"up"}, 1000);*/
+        $( ".conteneur2").slideToggle(1000);
+
+        $( ".conteneur").hide(500);
+        $( ".conteneur3").hide(500);
 	  	}
    	});
-    
-    // =======> ANIMATION TEMPORAIRE <=======
-    /*jQuery('.menu_cv').click(function()
+
+    $('.menu_contact').click(function()
     {
-      if(boolean_open == false){
-        jQuery('.conteneur').show();
-        jQuery('.conteneur2').hide();
-        jQuery('.conteneur3').hide();
+      if(boolean_open == false){ // Si le menu est déroulé
+        $( ".conteneur3").slideToggle(1000);
+
+        $( ".conteneur").hide(500);
+        $( ".conteneur2").hide(500);
       }
     });
-
-    jQuery('.menu_projet').click(function()
-    {
-      if(boolean_open == false){
-        jQuery('.conteneur2').show();
-        jQuery('.conteneur').hide();
-        jQuery('.conteneur3').hide();
-      }
-    });
-
-    jQuery('.menu_contact').click(function()
-    {
-      if(boolean_open == false){
-        jQuery('.conteneur3').show();
-        jQuery('.conteneur2').hide();
-        jQuery('.conteneur').hide();
-      }
-    });*/
-
 });

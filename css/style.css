@@ -139,10 +139,20 @@ html{background: #1f253d;}
 				.contenu_projet_reas fieldset img{height: 58px;}
 
 /* CONTENEUR ME CONTACTER */
-.conteneur3{color: white; width: 850px; /*height: 500px;*/ margin: 0 auto; margin-top: 15px; display: block; border-radius: 7px 7px 7px 7px; /*background-color: #394264;*/ /*border: solid 1px white;*/}
+.conteneur3{font-family:Exo-Light, Arial; color: white; width: 850px; /*height: 500px;*/ margin: 0 auto; margin-top: 15px; display: block; border-radius: 7px 7px 7px 7px; /*background-color: #394264;*/ /*border: solid 1px white;*/}
 	.contact{/*border: solid 1px red;*/ height: 300px; margin-top: 15px;}
-		.titre_contact{	/* color: #374A58; */ font-family:Exo-Light, Arial; font-size: 18px; text-align: left; /* margin-left: 18px; */ margin-right: 18px; width: 100%; /* height: 100%; */ background-color: #50597b; line-height: 40px; border-radius: 7px 7px 0 0;}
+		.titre_contact{	/* color: #374A58; */ font-size: 18px; text-align: left; /* margin-left: 18px; */ margin-right: 18px; width: 100%; /* height: 100%; */ background-color: #50597b; line-height: 40px; border-radius: 7px 7px 0 0;}
 		.contenu_contact{background-color: #394264;	padding-left: 25px;	padding-top: 25px; padding-bottom: 25px;}
 			.contenu_contact fieldset{padding: 0px; width: 107px; padding-left: 6px; padding-right: 5px; border-radius: 7px;}	
 				.contenu_contact fieldset img{height: 58px;}
+					.icones_contact{display: flex;}
+						.contact_droit{width:50%; text-align: center;}
+							.contact_droit a{color:#fff; text-decoration: none;}
+								.contact_droit img{width: 100px; height: auto;}
+
+						.contact_gauche{width:50%; text-align: center;}
+							.contact_gauche a{color:#fff; text-decoration: none;}
+								.contact_gauche img{width: 100px; height: auto;}
+
+					.bottom_contact{text-align: center; margin-top: 20px;}
 

@@ -4,10 +4,11 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<link rel="stylesheet" type="text/css" href="./css/flaticon.css">
-		<link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
-		<link rel="stylesheet" type="text/css" href="jqueryui/development-bundle/themes/smoothness/jquery.ui.all.css"/> 
+		<link rel="stylesheet" type="text/css" href="./css/lightbox.css"/>
+		<link rel="stylesheet" type="text/css" href="./js/jquery-ui.css"/>
+		<script type="text/javascript" src="./js/jquery-ui.js"></script>
 		<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="js/lightbox.min.js"></script>
+		<script type="text/javascript" src="./js/lightbox.min.js"></script>
 		<!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>-->
 		<script type="text/javascript" src="./js/app.js"></script>
 		<!--[if IE]>
@@ -46,7 +47,7 @@
 				Curriculum vitae
 			</div>
 			<div class="menu_projet">
-				Projets
+				Projets / réalisations
 			</div>
 			<div class="menu_contact">
 				Me contacter
@@ -382,7 +383,7 @@
 
 		<!--CONTENEUR DE PROJETS-->
 		<div class="conteneur2">
-			<div class="projet">
+			<section class="projet">
 				<div class="titre_projet">&nbsp;&nbsp;Projets</div>
 				<!-- palette #394264 / #2E3654 -->
 				<ul class="ligne">
@@ -411,9 +412,9 @@
 						<div class="img_proj"><img src="./img/axis_logo.png"></div>
 					</li>
 				</ul>
-			</div>
-			<div class="projet_design">
-				<div class="titre_projet_reas">&nbsp;&nbsp;Réalisations graphiques</div>
+			</section>
+			<section class="projet_design">
+				<div class="titre_projet_reas">&nbsp;&nbsp;Quelques réalisations graphiques... </div>
 				<div class="contenu_projet_reas">
 					<a href="img/reas/androsignature.png" data-lightbox="image-1" data-title="Signature android pour le site d'Androidgen"><img src="./img/reas/androsignature_thumbnail.png"></a>
 					<a href="img/reas/Asus-Wallapaper.png" data-lightbox="image-1" data-title="Réalisation d'un fond d'écran personnel Asus"><img src="./img/reas/Asus-Wallapaper_thumbnail.png"></a>
@@ -434,7 +435,7 @@
 					<a href="img/reas/TF2signature.png" data-lightbox="image-1" data-title="Signature personnelle pour un forum de Team Fortress 2"><img src="./img/reas/TF2signature_thumbnail.png"></a>
 					<a href="img/reas/UKDesign.png" data-lightbox="image-1" data-title="Réalisation personnelle"><img src="./img/reas/UKDesign_thumbnail.png"></a>
 				</div>
-			</div>
+			</section>
 		</div>
 
 		<!--CONTENEUR DU CONTACT-->
@@ -442,7 +443,21 @@
 			<div class="contact">
 				<div class="titre_contact">&nbsp;&nbsp;Me contacter</div>
 				<div class="contenu_contact">
-						LOREM IPSUM
+					<div class="icones_contact">
+						<div class="contact_droit">
+							<a href="http://www.twitter.com/floriandeparis">
+								<img src="./img/logo-twitter.png">
+								<br><font>Suivez-moi sur Twitter ...</font>
+							</a>
+						</div>
+						<div class="contact_gauche">
+							<a href="http://fr.linkedin.com/pub/florian-tournay/80/878/8b5/">
+								<img src="./img/logo-linkedin.png">
+								<br><font>... ainsi que sur Linkedin</font>
+							</a>
+						</div>
+					</div>
+					<div class="bottom_contact">Si vous voulez me contacter: florian.tournay@hotmail.fr</div>
 				</div>
 			</div>
 		</div>
