@@ -67,7 +67,7 @@
 						<li>
 							<span class="annee rotate">2014-2016</span>
 							<div class="etude">
-								<font class="brevet">Master - Ingénierie du Web et E-Business (espéré)</font><br>
+								<font class="brevet">Master - Ingénierie du Web et E-Business (en formation)</font><br>
 								<font class="etablissement">ESGI - Ecole Supérieure de Génie Informatique</font><br>
 								<font class="lieu">Paris 12 - Paris</font>
 							</div>
@@ -389,7 +389,7 @@
 				<ul class="ligne">
 					<li class="ligne_proj">
 						<div class="annee_proj">2014</div>
-						<div class="contenu_proj">Conception d'un thème sous Wordpress pour un site immobilier (en&nbsp;développement&nbsp;...)
+						<div class="contenu_proj">Conception d'un thème sous Wordpress pour un site immobilier
 							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> HTML / CSS3 / PHP</div>
 						<div class="img_proj"><img src="./img/wordpress_logo.png"></div>
 					</li>
@@ -409,7 +409,7 @@
 						<div class="annee_proj">2012</div>
 						<div class="contenu_proj">Développement de la partie client d'une application de télésurveillance et d'enregistrement vidéo de caméras IP Axis 213PTZ 
 							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> C++ <i>via Qt Creator</i></div>
-						<div class="img_proj"><img src="./img/axis_logo.png"></div>
+						<div class="img_proj"><img src="./img/qt-logo.png"></div>
 					</li>
 				</ul>
 			</section>
