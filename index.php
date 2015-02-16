@@ -453,7 +453,21 @@
 						<div class="contact_gauche">
 							<a href="http://fr.linkedin.com/pub/florian-tournay/80/878/8b5/">
 								<img src="./img/logo-linkedin.png">
-								<br><font>... ainsi que sur Linkedin</font>
+								<br><font>... sur Linkedin ...</font>
+							</a>
+						</div>
+					</div>
+					<div class="icones_contact_bis">
+						<div class="contact_droit">
+							<a href="https://github.com/FlorianDeParis">
+								<img src="./img/github_icon.png">
+								<br><font>... sur GitHub ...</font>
+							</a>
+						</div>
+						<div class="contact_gauche">
+							<a href="http://www.viadeo.com/fr/profile/florian.tournay">
+								<img src="./img/picto_viadeo.png">
+								<br><font>... ainsi que sur Viadeo</font>
 							</a>
 						</div>
 					</div>

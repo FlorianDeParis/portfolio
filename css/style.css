@@ -153,6 +153,7 @@ html{background: #1f253d;}
 						.contact_gauche{width:50%; text-align: center;}
 							.contact_gauche a{color:#fff; text-decoration: none;}
 								.contact_gauche img{width: 100px; height: auto;}
+					.icones_contact_bis{display: flex; margin-top: 25px;}
 
 					.bottom_contact{text-align: center; margin-top: 20px;}
 
