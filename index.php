@@ -1,479 +1,315 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		<link rel="stylesheet" type="text/css" href="./css/flaticon.css">
-		<link rel="stylesheet" type="text/css" href="./css/lightbox.css"/>
-		<link rel="stylesheet" type="text/css" href="./js/jquery-ui.css"/>
-		<script type="text/javascript" src="./js/jquery-ui.js"></script>
-		<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="./js/lightbox.min.js"></script>
-		<!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>-->
-		<script type="text/javascript" src="./js/app.js"></script>
-		<!--[if IE]>
-      		<link rel="stylesheet" type="text/css" href="./css/ie.css" />
-      	<![endif]-->
-		<title>Florian Tournay</title>
-	</head>
-	<body onload="loading()">
-		<div id="chargement">
-				<span class="loader loader-quart"></span>
-				Chargement...
-		</div>
+<?php
+/**
+ * CodeIgniter
+ *
+ * An open source application development framework for PHP
+ *
+ * This content is released under the MIT License (MIT)
+ *
+ * Copyright (c) 2014 - 2016, British Columbia Institute of Technology
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @package	CodeIgniter
+ * @author	EllisLab Dev Team
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+ * @copyright	Copyright (c) 2014 - 2016, British Columbia Institute of Technology (http://bcit.ca/)
+ * @license	http://opensource.org/licenses/MIT	MIT License
+ * @link	https://codeigniter.com
+ * @since	Version 1.0.0
+ * @filesource
+ */
 
-		<!--CADRE DE PRESENTATION-->
-		<div class="corps" id="site">
-			<div class="presentation">
-				<div class="photo_corps">
-					<img src="./img/myself.jpg">
-				</div>
-				<div class="titre_corps">
-					<div class="entete">Florian Tournay</div>
-					<div class="bio">Développeur / Intégrateur Web<br>
-						Etudiant en alternance, passionné de design, des technologies du web ainsi que du high-tech.</div>
-				</div>
-			</div>
-			<div class="arrow">
-				<i class="flaticon-arrow128">
-					<span class="popup">Je vous en prie, cliquez!</span>
-				</i>
-			</div>
-		</div>
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ */
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
-		<!-- MENU CATEGORIES -->
-		<div class="menu">
-			<div class="menu_cv">
-				Curriculum vitae
-			</div>
-			<div class="menu_projet">
-				Projets / réalisations
-			</div>
-			<div class="menu_contact">
-				Me contacter
-			</div>
-		</div>
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
+switch (ENVIRONMENT)
+{
+	case 'development':
+		error_reporting(-1);
+		ini_set('display_errors', 1);
+	break;
 
-		<!--CONTENEUR CURRICULUM VITAE-->
-		<div class="conteneur">
+	case 'testing':
+	case 'production':
+		ini_set('display_errors', 0);
+		if (version_compare(PHP_VERSION, '5.3', '>='))
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
+		}
+		else
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
+		}
+	break;
 
-			<!--COLONNE GAUCHE -->
-			<section class="parcours">
+	default:
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'The application environment is not set correctly.';
+		exit(1); // EXIT_ERROR
+}
 
-				<!--CURSUS SCOLAIRE-->
-				<section class="parcours_scolaire">
-					<div class="titre_cursus">&nbsp;&nbsp;Cursus Scolaire</div>
-					<ul class="liste_des_cursus">
-						<li>
-							<span class="annee rotate">2014-2016</span>
-							<div class="etude">
-								<font class="brevet">Master - Ingénierie du Web et E-Business (en formation)</font><br>
-								<font class="etablissement">ESGI - Ecole Supérieure de Génie Informatique</font><br>
-								<font class="lieu">Paris 12 - Paris</font>
-							</div>
-							<div class="logo_etablissement">
-								<img src="./img/Logo-ESGI.png">
-							</div>
-						</li>
-						<li>
-							<span class="annee rotate">2014</span>
-							<div class="etude">
-								<font class="brevet">Bachelor (équivalent Licence) - Développement web</font><br>
-								<font class="etablissement">ESGI - Ecole Supérieure de Génie Informatique</font><br>
-								<font class="lieu">Paris 12 - Paris</font>
-							</div>
-							<div class="logo_etablissement">
-								<img src="./img/Logo-ESGI.png">
-							</div>
-						</li>
-						<li>
-							<span class="annee rotate">2013</span>
-							<div class="etude">
-								<font class="brevet">BTS IRIS - Informatique des Réseaux de l'Industrie et des Services techniques</font><br>
-								<font class="etablissement">Lycée Polyvalent Dorian</font><br>
-								<font class="lieu">Paris 11 - Paris</font>
-							</div>
-							<div class="logo_etablissement">
-								<img src="./img/Dorian.png">
-							</div>
-						</li>
-						<li>
-							<span class="annee rotate">2011</span>
-							<div class="etude">
-								<font class="brevet">Baccalauréat STI - Sciences Techniques de l'Industrie <font style="font-family: Origin-ExtraBold, Arial; font-size: 10px;">- (Spé. Génie Electronique Numérique)</font></font><br>
-								<font class="etablissement">Lycée Polyvalent Louis Armand</font><br>
-								<font class="lieu">Nogent-Sur-Marne - Val de Marne</font>
-							</div>
-							<div class="logo_etablissement">
-								<img src="./img/louis_armand.png">
-							</div>
-						</li>
-					</ul>
-				</section>
+/*
+ *---------------------------------------------------------------
+ * SYSTEM DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" directory.
+ * Set the path if it is not in the same directory as this file.
+ */
+	$system_path = 'system';
 
-				<!--EXPERIENCE PROFESIONNELLE-->
-				<section class="parcours_professionnel">
-					<div class="titre_cursus" style="margin-bottom: 15px">&nbsp;&nbsp;Expérience professionnelle</div>
-					<ul class="liste_des_cursus">
-						<li>
-							<span class="annee rotate">2014-2016</span>
-							<div class="etude">
-								<font class="brevet"><i>En recherche d'entreprise ...</i></font><br>
-								<font class="etablissement"></font><br>
-								<font class="lieu"></font>
-							</div>
-							<div class="logo_etablissement">
-								<img src="./img/turn-arrow.png">
-							</div>
-						</li>
-						<li>
-							<span class="annee rotate">2013-2014</span>
-							<div class="etude">
-								<font class="brevet">Analyste informatique / développeur web front-end</font><br>
-								<font class="etablissement">HSBC - Courbevoie (La Défense)</font><br>
-								<font class="lieu">Contrat professionnel de 11 mois</font>
-							</div>
-							<div class="logo_etablissement">
-								<img src="./img/HSBC.png">
-							</div>
-						</li>
-						<li>
-							<span class="annee rotate">2012</span>
-							<div class="etude">
-								<font class="brevet">Stagiaire développeur / testeur en Jython</font><br>
-								<font class="etablissement">Axway - Puteaux</font><br>
-								<font class="lieu">Stage de découverte du Jython</font>
-							</div>
-							<div class="logo_etablissement">
-								<img src="./img/Axway.png">
-							</div>
-						</li>
-						<li>
-							<span class="annee rotate">2007</span>
-							<div class="etude">
-								<font class="brevet">Stagiaire développeur / testeur en Pascal et MySQL</font><br>
-								<font class="etablissement">KDI - Aubervilliers</font><br>
-								<font class="lieu">Stage de découverte du Pascal et de MySQL</font>
-							</div>
-							<div class="logo_etablissement">
-								<img src="./img/logo-kdi.png">
-							</div>
-						</li>
-					</ul>
-				</section>
+/*
+ *---------------------------------------------------------------
+ * APPLICATION DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * directory than the default one you can set its name here. The directory
+ * can also be renamed or relocated anywhere on your server. If you do,
+ * use an absolute (full) server path.
+ * For more info please see the user guide:
+ *
+ * https://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ */
+	$application_folder = 'application';
+
+/*
+ *---------------------------------------------------------------
+ * VIEW DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * If you want to move the view directory out of the application
+ * directory, set the path to it here. The directory can be renamed
+ * and relocated anywhere on your server. If blank, it will default
+ * to the standard location inside your application directory.
+ * If you do move this, use an absolute (full) server path.
+ *
+ * NO TRAILING SLASH!
+ */
+	$view_folder = '';
 
 
-				<!--PASSIONS / INTERETS -->	
-				<section class="liste_interets">
-					<div class="titre_cursus" style="margin-bottom: 15px">&nbsp;&nbsp;Passions / intérêts</div>
-					<ul class="interets">
-						<li>
-							<div class="etude">
-								<font class="brevet">Sport:</font><br>
-								<font class="etablissement">Badminton, VTT, Sport en salle</font>
-							</div>
-						</li>
-						<li>
-							<div class="etude">
-								<font class="brevet">Passions:</font><br>
-								<font class="etablissement">Musique (DJing) , Internet, Webdesign, High-Tech, Smartphones, Android, Linux</font>
-							</div>
-						</li>
-						<li>
-							<div class="etude">
-								<font class="brevet">Activités:</font><br>
-								<font class="etablissement">Composition et mixage de musiques (DJing),<br>
-									design d'un site d'actualités numériques, <br>
-									maintenance et réparation de smartphones et PCs,<br>
-									jeux en ligne,<br>
-									promenades,<br>
-									création d'un réseau multimédia domestique.
-									</font>
-							</div>
-						</li>
-					</ul>
-				</section>
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here. For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT: If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller. Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ */
+	// The directory name, relative to the "controllers" directory.  Leave blank
+	// if your controller is not in a sub-directory within the "controllers" one
+	// $routing['directory'] = '';
+
+	// The controller class file name.  Example:  mycontroller
+	// $routing['controller'] = '';
+
+	// The controller function you wish to be called.
+	// $routing['function']	= '';
 
 
-			</section>
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ */
+	// $assign_to_config['name_of_config_item'] = 'value of config item';
 
-			<!--COMPETENCES TECHNIQUES-->
-			<aside class="competences">
-				<div class="titre_competences">&nbsp;&nbsp;Compétences</div>
-				<ul class="competences_liste">
-					<li>
-						<div class="competences_cat_label">Développement</div>
-						<ul class="competences_cat competences_liste_dev">
-							<li class="liste_matiere">
-								<div class="matiere">HTML5 / XHTML</div>
-								<div class="classement">
-									<img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">CSS3</div>
-								<div class="classement">
-									<img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">JS / jQuery / Ajax</div>
-								<div class="classement">
-									<img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">PHP objet</div>
-								<div class="classement">
-									<img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">CMS (WordPress)</div>
-								<div class="classement">
-									<img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">Python</div>
-								<div class="classement">
-									<img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">Java</div>
-								<div class="classement">
-									<img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">C / C++</div>
-								<div class="classement">
-									<img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">Shell Script</div>
-								<div class="classement">
-									<img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag-active-green.png"><!--
-									--><img src="./img/html-tag-active-green.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png">
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<div class="competences_cat_label">Design</div>
-						<ul class="competences_cat competences_liste_design">
-							<li class="liste_matiere">
-								<div class="matiere">Responsive</div>
-								<div class="classement">
-									<img src="./img/html-tag-active-yellow.png"><!----><img src="./img/html-tag-active-yellow.png"><!--
-									--><img src="./img/html-tag-active-yellow.png"><!----><img src="./img/html-tag-active-yellow.png"><!--
-									--><img src="./img/html-tag.png"><!----><img src="./img/html-tag.png"><!--
-									--><img src="./img/html-tag.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">Photoshop</div>
-								<div class="classement">
-									<img src="./img/photoshop-active-yellow.png"><!----><img src="./img/photoshop-active-yellow.png"><!--
-									--><img src="./img/photoshop-active-yellow.png"><!----><img src="./img/photoshop-active-yellow.png"><!--
-									--><img src="./img/photoshop.png"><!----><img src="./img/photoshop.png"><!--
-									--><img src="./img/photoshop.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">Illustrator</div>
-								<div class="classement">
-									<img src="./img/illustrator-active-yellow.png"><!----><img src="./img/illustrator-active-yellow.png"><!--
-									--><img src="./img/illustrator-active-yellow.png"><!----><img src="./img/illustrator.png"><!--
-									--><img src="./img/illustrator.png"><!----><img src="./img/illustrator.png"><!--
-									--><img src="./img/illustrator.png">
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<div class="competences_cat_label">Systèmes</div>
-						<ul class="competences_cat competences_liste_sys">
-							<li class="liste_matiere">
-								<div class="matiere">Windows XP/Vista/7/8/8.1</div>
-								<div class="classement">
-									<img src="./img/windows11-active-red.png"><!----><img src="./img/windows11-active-red.png"><!--
-									--><img src="./img/windows11-active-red.png"><!----><img src="./img/windows11-active-red.png"><!--
-									--><img src="./img/windows11-active-red.png"><!----><img src="./img/windows11.png"><!--
-									--><img src="./img/windows11.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">Linux (Debian, ... )</div>
-								<div class="classement">
-									<img src="./img/linux1-active-red.png"><!----><img src="./img/linux1-active-red.png"><!--
-									--><img src="./img/linux1-active-red.png"><!----><img src="./img/linux1-active-red.png"><!--
-									--><img src="./img/linux1.png"><!----><img src="./img/linux1.png"><!--
-									--><img src="./img/linux1.png">
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<div class="competences_cat_label">Langues</div>
-						<ul class="competences_cat competences_liste_langues">
-							<li class="liste_matiere">
-								<div class="matiere">Anglais</div>
-								<div class="classement">
-									<img src="./img/united2-active-green.png"><!----><img src="./img/united2-active-green.png"><!--
-									--><img src="./img/united2-active-green.png"><!----><img src="./img/united2-active-green.png"><!--
-									--><img src="./img/united2.png"><!----><img src="./img/united2.png"><!--
-									--><img src="./img/united2.png">
-								</div>
-							</li>
-							<li class="liste_matiere">
-								<div class="matiere">Espagnol</div>
-								<div class="classement">
-									<img src="./img/spain-active-green.png"><!----><img src="./img/spain-active-green.png"><!--
-									--><img src="./img/spain.png"><!----><img src="./img/spain.png"><!--
-									--><img src="./img/spain.png"><!----><img src="./img/spain.png"><!--
-									--><img src="./img/spain.png">
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li class="legende">
-						<div class="legende_label">Légende</div>
-						<ul>
-							<li><div class="legende_points">1 point:</div>Niveau débutant</li>
-							<li><div class="legende_points">2 points:</div>Niveau débutant avancé</li>
-							<li><div class="legende_points">3 points:</div>Niveau moyen</li>
-							<li><div class="legende_points">4 points:</div>Niveau acceptable</li>
-							<li><div class="legende_points">5 points:</div>Niveau bon</li>
-							<li><div class="legende_points">6 points:</div>Niveau avancé</li>
-							<li><div class="legende_points">7 points:</div>Niveau très bon</li>
-						</ul>
-					</li>
-				</ul>
-			</aside>
-		</div>
 
-		<!--CONTENEUR DE PROJETS-->
-		<div class="conteneur2">
-			<section class="projet">
-				<div class="titre_projet">&nbsp;&nbsp;Projets</div>
-				<!-- palette #394264 / #2E3654 -->
-				<ul class="ligne">
-					<li class="ligne_proj">
-						<div class="annee_proj">2014</div>
-						<div class="contenu_proj">Conception d'un thème sous Wordpress pour un site immobilier
-							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> HTML / CSS3 / PHP</div>
-						<div class="img_proj"><img src="./img/wordpress_logo.png"></div>
-					</li>
-					<li class="ligne_proj">
-						<div class="annee_proj">2014</br>-</br>2013</div>
-						<div class="contenu_proj">Conception et design du site Antica.fr (Actualités des Nouvelles Technologies de l'Information et des Communications de l'Avenir) 
-							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> HTML5 / CSS3 / JS / JQuery / JQuery UI</div>
-						<div class="img_proj"><a onclick="window.open('http://www.antica.fr');"><img src="./img/antica_min.png"></a></div>
-					</li>
-					<li class="ligne_proj">
-						<div class="annee_proj">2013</div>
-						<div class="contenu_proj">Conception d'un slideshow pour Wordpress 
-							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> HTML / CSS3 / JS / JQuery / PHP</div>
-						<div class="img_proj"><img src="./img/wordpress_logo.png"></div>
-					</li>
-					<li class="ligne_proj">
-						<div class="annee_proj">2012</div>
-						<div class="contenu_proj">Développement de la partie client d'une application de télésurveillance et d'enregistrement vidéo de caméras IP Axis 213PTZ 
-							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Environnement technique:</u></b> C++ <i>via Qt Creator</i></div>
-						<div class="img_proj"><img src="./img/qt-logo.png"></div>
-					</li>
-				</ul>
-			</section>
-			<section class="projet_design">
-				<div class="titre_projet_reas">&nbsp;&nbsp;Quelques réalisations graphiques... </div>
-				<div class="contenu_projet_reas">
-					<a href="img/reas/androsignature.png" data-lightbox="image-1" data-title="Signature android pour le site d'Androidgen"><img src="./img/reas/androsignature_thumbnail.png"></a>
-					<a href="img/reas/Asus-Wallapaper.png" data-lightbox="image-1" data-title="Réalisation d'un fond d'écran personnel Asus"><img src="./img/reas/Asus-Wallapaper_thumbnail.png"></a>
-					<a href="img/reas/Avatar.png" data-lightbox="image-1" data-title="Avatar réalisé pour un forumeur"><img src="./img/reas/Avatar_thumbnail.png"></a>
-					<a href="img/reas/Banderole.png" data-lightbox="image-1" data-title="Bannière de ma page personnelle de mix"><img src="./img/reas/Banderole_thumbnail.png"></a>
-					<a href="img/reas/bootlegcover.png" data-lightbox="image-1" data-title="Jaquette d'un bootleg personnellement réalisé"><img src="./img/reas/bootlegcover_thumbnail.png"></a>
-					<a href="img/reas/Bootlogo.png" data-lightbox="image-1" data-title="Bootlogo d'iPhone personnalisé pour un client"><img src="./img/reas/Bootlogo_thumbnail.png"></a>
-					<a href="img/reas/ChannelTemplate.jpg" data-lightbox="image-1" data-title="Ancien template pour ma chaine personnelle Youtube"><img src="./img/reas/ChannelTemplate_thumbnail.png"></a>
-					<a href="img/reas/contestlogo.png" data-lightbox="image-1" data-title="Avatar proposé pour un concours du meilleur avatar"><img src="./img/reas/contestlogo_thumbnail.png"></a>
-					<a href="img/reas/djarchimed-banner.jpg" data-lightbox="image-1" data-title="Deuxième bannière pour mon site de mix"><img src="./img/reas/djarchimed-banner_thumbnail.png"></a>
-					<a href="img/reas/djarchimedwall.png" data-lightbox="image-1" data-title="Fond de mon site de mix"><img src="./img/reas/djarchimedwall_thumbnail.png"></a>
-					<a href="img/reas/ET.png" data-lightbox="image-1" data-title="Logo proposé pour un site prototype de High-Tech"><img src="./img/reas/ET_thumbnail.png"></a>
-					<a href="img/reas/Hennessy.png" data-lightbox="image-1" data-title="Bannière pour une connaissance personnelle"><img src="./img/reas/Hennessy_thumbnail.png"></a>
-					<a href="img/reas/JB416.png" data-lightbox="image-1" data-title="Autre bannière pour un site prototype High-Tech"><img src="./img/reas/JB416_thumbnail.png"></a>
-					<a href="img/reas/persowall.png" data-lightbox="image-1" data-title="Fond d'écran personnel de mon compte Twitter"><img src="./img/reas/persowall_thumbnail.png"></a>
-					<a href="img/reas/Savoirutile-wall.png" data-lightbox="image-1" data-title="Fond d'écran pour un utilisateur Twitter"><img src="./img/reas/Savoirutile-wall_thumbnail.png"></a>
-					<a href="img/reas/stargate_atlantis.png" data-lightbox="image-1" data-title="Bannière personnelle pour un ancien forum"><img src="./img/reas/stargate_atlantis_thumbnail.png"></a>
-					<a href="img/reas/TF2signature.png" data-lightbox="image-1" data-title="Signature personnelle pour un forum de Team Fortress 2"><img src="./img/reas/TF2signature_thumbnail.png"></a>
-					<a href="img/reas/UKDesign.png" data-lightbox="image-1" data-title="Réalisation personnelle"><img src="./img/reas/UKDesign_thumbnail.png"></a>
-				</div>
-			</section>
-		</div>
 
-		<!--CONTENEUR DU CONTACT-->
-		<div class="conteneur3">
-			<div class="contact">
-				<div class="titre_contact">&nbsp;&nbsp;Me contacter</div>
-				<div class="contenu_contact">
-					<div class="icones_contact">
-						<div class="contact_droit">
-							<a href="http://www.twitter.com/floriandeparis">
-								<img src="./img/logo-twitter.png">
-								<br><font>Suivez-moi sur Twitter ...</font>
-							</a>
-						</div>
-						<div class="contact_gauche">
-							<a href="http://fr.linkedin.com/pub/florian-tournay/80/878/8b5/">
-								<img src="./img/logo-linkedin.png">
-								<br><font>... sur Linkedin ...</font>
-							</a>
-						</div>
-					</div>
-					<div class="icones_contact_bis">
-						<div class="contact_droit">
-							<a href="https://github.com/FlorianDeParis">
-								<img src="./img/github_icon.png">
-								<br><font>... sur GitHub ...</font>
-							</a>
-						</div>
-						<div class="contact_gauche">
-							<a href="http://www.viadeo.com/fr/profile/florian.tournay">
-								<img src="./img/picto_viadeo.png">
-								<br><font>... ainsi que sur Viadeo</font>
-							</a>
-						</div>
-					</div>
-					<div class="bottom_contact">Si vous voulez me contacter: florian.tournay@hotmail.fr</div>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
+
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
+
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN'))
+	{
+		chdir(dirname(__FILE__));
+	}
+
+	if (($_temp = realpath($system_path)) !== FALSE)
+	{
+		$system_path = $_temp.DIRECTORY_SEPARATOR;
+	}
+	else
+	{
+		// Ensure there's a trailing slash
+		$system_path = strtr(
+			rtrim($system_path, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		).DIRECTORY_SEPARATOR;
+	}
+
+	// Is the system path correct?
+	if ( ! is_dir($system_path))
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
+		exit(3); // EXIT_CONFIG
+	}
+
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+	// The name of THIS file
+	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+
+	// Path to the system directory
+	define('BASEPATH', $system_path);
+
+	// Path to the front controller (this file) directory
+	define('FCPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
+
+	// Name of the "system" directory
+	define('SYSDIR', basename(BASEPATH));
+
+	// The path to the "application" directory
+	if (is_dir($application_folder))
+	{
+		if (($_temp = realpath($application_folder)) !== FALSE)
+		{
+			$application_folder = $_temp;
+		}
+		else
+		{
+			$application_folder = strtr(
+				rtrim($application_folder, '/\\'),
+				'/\\',
+				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			);
+		}
+	}
+	elseif (is_dir(BASEPATH.$application_folder.DIRECTORY_SEPARATOR))
+	{
+		$application_folder = BASEPATH.strtr(
+			trim($application_folder, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		);
+	}
+	else
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		exit(3); // EXIT_CONFIG
+	}
+
+	define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
+
+	// The path to the "views" directory
+	if ( ! isset($view_folder[0]) && is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
+	{
+		$view_folder = APPPATH.'views';
+	}
+	elseif (is_dir($view_folder))
+	{
+		if (($_temp = realpath($view_folder)) !== FALSE)
+		{
+			$view_folder = $_temp;
+		}
+		else
+		{
+			$view_folder = strtr(
+				rtrim($view_folder, '/\\'),
+				'/\\',
+				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			);
+		}
+	}
+	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
+	{
+		$view_folder = APPPATH.strtr(
+			trim($view_folder, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		);
+	}
+	else
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		exit(3); // EXIT_CONFIG
+	}
+
+	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ */
+require_once BASEPATH.'core/CodeIgniter.php';
