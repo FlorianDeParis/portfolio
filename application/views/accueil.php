@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <?php foreach($css as $src) { echo '<link rel="stylesheet" type="text/css" href="'.$src.'">';}?>
     <?php foreach($js as $src) { echo '<script type="text/javascript" src = "'.$src.'" ></script >';}?>
-    <title>Florian Tournay</title>
+    <title><?php echo $title; ?></title>
 </head>
 <body onload="loading()">
 <div id="chargement">
