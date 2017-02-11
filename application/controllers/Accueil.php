@@ -26,11 +26,11 @@ class Accueil extends CI_Controller {
 
     public function index2(){
         $data['css'] = array(
-            base_url()."assets/css/style.css");
+            base_url()."assets/css/style2.css");
         $data['js'] = array(
             base_url()."assets/js/jquery-2.1.1.min.js",
             base_url()."assets/js/script.js");
-        $data['title'] = 'Accueil | FT portfolio';
+        $data['title'] = 'Bienvenue !';
         $this->load->view('accueil2',$data);
     }
 

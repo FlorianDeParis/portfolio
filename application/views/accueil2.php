@@ -7,6 +7,6 @@
         <title><?php echo $title; ?></title>
     </head>
     <body>
-        azertyui
+        <nav class="bubble"><?php echo dyn_img('assets/img/photo.jpg','','bubble')?></nav>
     </body>
 </html>
