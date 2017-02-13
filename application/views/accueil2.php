@@ -7,6 +7,10 @@
         <title><?php echo $title; ?></title>
     </head>
     <body>
-        <nav class="bubble"><?php echo dyn_img('assets/img/photo.jpg','','bubble')?></nav>
+        <nav class="w_bubble">
+            <div class="open-bubble" style="background-image: url(<?php echo base_url()."assets/img/eye-open.png" ?>)"></div>
+            <div class="close-bubble"></div>
+            <?php echo dyn_img('assets/img/photo.jpg','','bubble')?>
+        </nav>
     </body>
 </html>
