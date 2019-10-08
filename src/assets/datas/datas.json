@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Développeur Full Stack Junior",
+    "company": "Mobeye",
+    "description": "Mobeye est un institut d’études nouvelle génération qui s’adresse aussi bien aux marques grands publics qu’aux distributeurs. Basée sur le concept du crowdsourcing, la solution s’appuie sur une communauté de un million de consommateurs pour récolter en temps réel des données terrain via une application mobile.",
+    "duration": "Avril 2019 - Juin 2019",
+    "mission": "Intégration de l'équipe du Pôle Tech de Mobeye.<br>- Développement Front-End de l'interface d'adminitration de la gestion des campagnes de Mobeye<br>-Développement Back-End de l'API Mobeye<br>-Développement Mobile sur iOS/Android",
+    "logo": "",
+    "technical_aspects": "Méthodologie SCRUM (Weeklys) + réunions fins de jalon / démos techniques, Versionning Github, Tests avec code review et gestion des pull requests",
+    "languages": "HTML5 - CSS3 - Javascript ES7 - Typescript",
+    "technologies": "React JS - React Native - Meteor JS - Django"
+  },
+  {
+    "title": "Développeur Intégrateur Web",
+    "company": "Storetail Marketing Services | Criteo",
+    "description": "Criteo est une entreprise française de reciblage publicitaire sur internet. Fondée à Paris en 2005, elle est cotée au NASDAQ depuis octobre 2013.",
+    "duration": "Septembre 2016 - Septembre 2018 | Septembre 2018 - Avril ",
+    "mission": "Développeur Intégrateur au sein du pôle IT de Storetail puis du pôle CAAP (Criteo Audience Activation Platform) de Criteo.",
+    "logo": "",
+    "technical_aspects": "Méthodologie SCRUM (Daylys), Versionning avec Atlasian Bitbucket, Tests de non-régression",
+    "languages": "HTML5 - CSS3 - Javascript ES6",
+    "techologies": "jQuery - Webpack - Vue JS"
+  },
+  {
+    "title": "Développeur Full Stack Junior",
+    "company": "Pushup Agency",
+    "description": "Pushup Agency est une agence web digitale spécialisée dans le marketing 360 et les stratégies digitales.",
+    "duration": "Septembre 2016 - Septembre 2018 | Septembre 2018 - Avril ",
+    "mission": "Développeur Intégrateur au sein du pôle IT de Storetail puis du pôle CAAP (Criteo Audience Activation Platform) de Criteo.",
+    "logo": "",
+    "technical_aspects": "Méthodologie SCRUM (Daylys), Versionning avec Atlasian Bitbucket, Tests de non-régression",
+    "languages": "HTML5 - CSS3 - Javascript ES6",
+    "techologies": "jQuery - Webpack - Vue JS"
+  }
+]
