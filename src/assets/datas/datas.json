@@ -31,5 +31,16 @@
     "technical_aspects": "Méthodologie SCRUM (Daylys), Versionning avec Atlasian Bitbucket, Tests de non-régression",
     "languages": "HTML5 - CSS3 - Javascript ES6",
     "techologies": "jQuery - Webpack - Vue JS"
+  },
+  {
+    "title": "Développeur Full Stack Junior",
+    "company": "Pushup Agency",
+    "description": "Pushup Agency est une agence web digitale spécialisée dans le marketing 360 et les stratégies digitales.",
+    "duration": "Septembre 2016 - Septembre 2018 | Septembre 2018 - Avril ",
+    "mission": "Développeur Intégrateur au sein du pôle IT de Storetail puis du pôle CAAP (Criteo Audience Activation Platform) de Criteo.",
+    "logo": "",
+    "technical_aspects": "Méthodologie SCRUM (Daylys), Versionning avec Atlasian Bitbucket, Tests de non-régression",
+    "languages": "HTML5 - CSS3 - Javascript ES6",
+    "techologies": "jQuery - Webpack - Vue JS"
   }
 ]

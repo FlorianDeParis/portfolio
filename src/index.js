@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/css/index.css';
+import './assets/styles/index.css';
 import Start from './Start';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
