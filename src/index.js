@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/styles/index.css';
+import './assets/styles/commons.scss';
 import Start from './Start';
+import Home from './components/Home';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 const Root = () => (
   <Router>
       <Switch>
+          <Route exact path="/home" component={Home}></Route>
           <Route exact path="/" component={Start}></Route>
           <Route component={Start}></Route>
       </Switch>

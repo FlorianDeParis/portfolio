@@ -1,10 +1,14 @@
 import React from 'react';
-import NavBar from './navbar'
+import NavBar from './Navbar';
+import '../assets/styles/home.scss';
 
 export default class Home extends React.Component{
   render(){
+    console.log("this is home page")
     return (
-      <NavBar />
+      <section id="Accueil">
+        <NavBar />
+      </section>
     );
   }
 }

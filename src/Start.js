@@ -13,7 +13,7 @@ export default class Start extends React.Component{
   startNavigation(){
     this.setState({ transparency: true })
     setTimeout(() => {
-      window.location.href = "/test";
+      window.location.href = "/home";
     }, 1000)
   }
 
