@@ -1,3 +1,5 @@
+@import 'knacss';
+
 html{
   background:$white;
 }
@@ -34,10 +36,33 @@ ul, li{
 }
 
 .container{
-  // max-width: 1024px;
-  // width: 1024px;
+  max-width: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: $spacer-medium;
+  padding-right: $spacer-medium;
+
+  @include respond-to('small-up'){
+    max-width: $tiny;
+    width: $tiny;
+  }
+  @include respond-to('medium-up'){
+    max-width: $small;
+    width: $small;
+  }
+  @include respond-to('large-up'){
+    max-width: $medium;
+    width: $medium;
+  }
+  @include respond-to('extra-large-up'){
+    max-width: $large;
+    width: $large;
+  }
+  @include respond-to('hyper-large-up'){
+    max-width: $large;
+    width: $large;
+  }
 }
 
 @mixin img-basic-config{

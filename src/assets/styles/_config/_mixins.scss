@@ -37,6 +37,9 @@ $bp-aliases: (
   'medium-up' : (min-width: #{$medium}),
   'large-up' : (min-width: #{$large}),
   'extra-large-up' : (min-width: #{$extra-large}),
+  'hyper-large-up' : (min-width: #{$hyper-large}),
+  'extended-up' : (min-width: #{$extended}),
+  'wide-up' : (min-width: #{$wide}),
   'retina' : (min-resolution: 2dppx)
 );
 
