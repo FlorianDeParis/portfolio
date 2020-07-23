@@ -19,8 +19,8 @@ export default class Start extends React.Component{
 
   render(){
     return (
-      <div className={this.state.transparency ? 'Splashscreen transparent' : 'Splashscreen'}>
-        <header className="Splashscreen-header">
+      <header className="Splashscreen">
+        <div className="Splashscreen__header container">
           <div className="Title-block">
             <ReactTypingEffect
               text="Florian Tournay"
@@ -31,8 +31,8 @@ export default class Start extends React.Component{
             <p>Développeur Web passionné.</p>
           </div>
           <button onClick={() =>{this.startNavigation()}}></button>
-        </header>
-      </div>
+        </div>
+      </header>
     );
   }
 }
