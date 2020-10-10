@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import '../assets/styles/commons.scss';
 import '../assets/styles/nav.scss';
 
 export default class NavBar extends React.Component{

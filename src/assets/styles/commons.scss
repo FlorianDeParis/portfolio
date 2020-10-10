@@ -2,6 +2,7 @@
 
 html{
   background:$white;
+  font-size: 10px;
 }
 
 body {
@@ -60,8 +61,16 @@ ul, li{
     width: $large;
   }
   @include respond-to('hyper-large-up'){
-    max-width: $large;
-    width: $large;
+    max-width: $extra-large;
+    width: $extra-large;
+  }
+  @include respond-to('extended-up'){
+    max-width: $hyper-large;
+    width: $hyper-large;
+  }
+  @include respond-to('wide-up'){
+    max-width: $extended;
+    width: $extended;
   }
 }
 

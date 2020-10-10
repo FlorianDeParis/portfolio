@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
+import './assets/styles/commons.scss';
 import './assets/styles/start.scss';
 
 export default class Start extends React.Component{
