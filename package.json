@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "eslint-utils": "^3.0.0",
-    "npm": "^9.6.4",
+    "npm": "^11.18.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router": "^5.1.2",
@@ -38,7 +38,7 @@
     "autoprefixer": "^9.8.8",
     "css-loader": "^3.6.0",
     "eslint-utils": "^3.0.0",
-    "npm": "^9.6.4",
+    "npm": "^11.18.0",
     "postcss-loader": "^3.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
